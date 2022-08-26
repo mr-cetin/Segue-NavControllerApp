@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HLe-4r-Q3J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnasayfaVC" customModule="O_dev4EmreCetin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="122" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-QX-KWx">
+                                <rect key="frame" x="173" y="356" width="68.5" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIj-8N-pQs">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Git &gt; A"/>
+                                        <connections>
+                                            <action selector="ToA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ea-vS-PDZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIH-Zc-ccf">
+                                        <rect key="frame" x="0.0" y="153" width="68.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Git &gt; X"/>
+                                        <connections>
+                                            <action selector="ToX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWQ-7j-YaL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SeX-QX-KWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3z0-Hd-ege"/>
+                            <constraint firstItem="SeX-QX-KWx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cWb-ee-yr2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anasayfa" id="eEh-gY-0fL"/>
+                    <connections>
+                        <segue destination="x6h-Y5-1iy" kind="show" identifier="toA" id="B3a-oJ-you"/>
+                        <segue destination="sfM-rc-RqN" kind="show" identifier="toX" id="aya-UO-BzR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="132.58928571428572"/>
+        </scene>
+        <!--Sayfa X-->
+        <scene sceneID="rwY-Ll-Vwl">
+            <objects>
+                <viewController id="sfM-rc-RqN" customClass="SayfaXVC" customModule="O_dev4EmreCetin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ODu-ni-Aav">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7q-6T-pXk">
+                                <rect key="frame" x="173" y="432.5" width="68" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git &gt; Y"/>
+                                <connections>
+                                    <action selector="ToY:" destination="sfM-rc-RqN" eventType="touchUpInside" id="aEi-Lh-uKl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Zw-de-xos"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C7q-6T-pXk" firstAttribute="centerX" secondItem="ODu-ni-Aav" secondAttribute="centerX" id="Btv-dv-Tao"/>
+                            <constraint firstItem="C7q-6T-pXk" firstAttribute="centerY" secondItem="ODu-ni-Aav" secondAttribute="centerY" id="VQf-Jm-T4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sayfa X" id="Sah-QC-SJL"/>
+                    <connections>
+                        <segue destination="ypg-a5-67w" kind="show" identifier="XtoY" id="Crz-sl-5C0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLJ-e1-Yin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="637"/>
+        </scene>
+        <!--Sayfa Y-->
+        <scene sceneID="ASn-Lk-Wkt">
+            <objects>
+                <viewController id="ypg-a5-67w" customClass="SayfaYVC" customModule="O_dev4EmreCetin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0TG-q8-f9T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2Z-7A-bKj">
+                                <rect key="frame" x="165.5" y="432.5" width="83.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Anasayfa"/>
+                                <connections>
+                                    <action selector="ToAnasayfa:" destination="ypg-a5-67w" eventType="touchUpInside" id="Stx-zR-Y9Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GvE-Vj-IW4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G2Z-7A-bKj" firstAttribute="centerY" secondItem="0TG-q8-f9T" secondAttribute="centerY" id="DWp-M0-ACM"/>
+                            <constraint firstItem="G2Z-7A-bKj" firstAttribute="centerX" secondItem="0TG-q8-f9T" secondAttribute="centerX" id="VKk-W2-mGq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sayfa Y" id="fXk-um-FF1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edW-H4-G9a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3064" y="637"/>
+        </scene>
+        <!--Sayfa A-->
+        <scene sceneID="NGz-6s-fkE">
+            <objects>
+                <viewController id="x6h-Y5-1iy" customClass="SayfaAVC" customModule="O_dev4EmreCetin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8s-GN-JAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22g-ik-Bfu">
+                                <rect key="frame" x="173" y="432.5" width="68" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git &gt; B"/>
+                                <connections>
+                                    <action selector="ToB:" destination="x6h-Y5-1iy" eventType="touchUpInside" id="vvf-v3-d86"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PbJ-Ay-9fJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="22g-ik-Bfu" firstAttribute="centerX" secondItem="R8s-GN-JAD" secondAttribute="centerX" id="X4Y-pm-PYD"/>
+                            <constraint firstItem="22g-ik-Bfu" firstAttribute="centerY" secondItem="R8s-GN-JAD" secondAttribute="centerY" id="iwb-Pb-x8M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sayfa A" id="hW6-dP-2oP"/>
+                    <connections>
+                        <segue destination="cI5-Rp-0Qg" kind="show" identifier="AtoB" id="cMS-3d-ng8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqt-Ed-aS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064" y="-101"/>
+        </scene>
+        <!--Sayfa B-->
+        <scene sceneID="jC2-1X-qa4">
+            <objects>
+                <viewController id="cI5-Rp-0Qg" customClass="SayfaBVC" customModule="O_dev4EmreCetin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T4k-AG-HB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAq-SR-Fix">
+                                <rect key="frame" x="173" y="432.5" width="68" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git &gt; Y"/>
+                                <connections>
+                                    <action selector="ToY:" destination="cI5-Rp-0Qg" eventType="touchUpInside" id="7E6-tF-Mrz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J7o-L3-lAn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DAq-SR-Fix" firstAttribute="centerX" secondItem="T4k-AG-HB3" secondAttribute="centerX" id="Mcx-lm-uSG"/>
+                            <constraint firstItem="DAq-SR-Fix" firstAttribute="centerY" secondItem="T4k-AG-HB3" secondAttribute="centerY" id="YU0-0f-g4z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sayfa B" id="EIG-K0-1hc"/>
+                    <connections>
+                        <segue destination="ypg-a5-67w" kind="show" identifier="BtoY" id="WIa-1T-be1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgN-1a-dJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="-101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aZy-TY-dE5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HLe-4r-Q3J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rnH-eQ-caj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xlo-jA-j9i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dP-mx-hdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Crz-sl-5C0"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
